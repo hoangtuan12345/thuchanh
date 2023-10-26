@@ -1,0 +1,45 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Thanh Tiêu Đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thực Đơn 10 Món Ăn"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#3399FF"
+        android:textColor="#FFFFFF" />
+
+
+    <ListView
+        android:id="@+id/foodListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/foodDetailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            
+            android:maxHeight="200dp"
+            android:scaleType="centerInside" />
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên Món Ăn"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:padding="16dp" />
+    </RelativeLayout>
+</LinearLayout>
